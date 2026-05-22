@@ -1,0 +1,9 @@
+name: testproject
+version: "1.0.0"
+profile: testproject
+
+model-paths: ["models"]
+
+models:
+  testproject:
+    +materialized: table

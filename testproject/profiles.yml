@@ -1,0 +1,6 @@
+testproject:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "testproject.duckdb"

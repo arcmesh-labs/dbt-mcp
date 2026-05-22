@@ -1,0 +1,13 @@
+fastmcp>=2.0.0
+dbt-core>=1.7.0
+
+# Uncomment the adapter that matches your warehouse:
+# dbt-duckdb>=1.7.0       # for local testing with DuckDB
+# dbt-postgres>=1.7.0     # PostgreSQL / Amazon RDS
+# dbt-redshift>=1.7.0     # Amazon Redshift
+# dbt-snowflake>=1.7.0    # Snowflake
+# dbt-bigquery>=1.7.0     # Google BigQuery
+# dbt-spark>=1.7.0        # Apache Spark / Databricks (open-source connector)
+# dbt-databricks>=1.7.0   # Databricks (official connector, preferred over dbt-spark)
+# dbt-trino>=1.7.0        # Trino / Starburst
+# dbt-athena-community>=1.7.0  # Amazon Athena

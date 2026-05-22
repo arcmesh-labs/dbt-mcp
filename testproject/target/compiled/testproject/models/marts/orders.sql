@@ -1,0 +1,1 @@
+select * from "testproject"."main"."stg_orders"

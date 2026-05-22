@@ -1,0 +1,32 @@
+{
+  "name": "dbt-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for dbt — inspect model errors, run models, read test results, trace lineage, and browse the project manifest.",
+  "entrypoint": "python server.py",
+  "runtime": "python",
+  "env": {
+    "DBT_PROJECT_DIR": {
+      "required": true,
+      "description": "Absolute path to the dbt project root (the directory containing dbt_project.yml)"
+    },
+    "DBT_PROFILES_DIR": {
+      "required": false,
+      "default": "~/.dbt",
+      "description": "Directory containing profiles.yml; defaults to ~/.dbt if not set"
+    },
+    "DBT_TARGET": {
+      "required": false,
+      "default": "dev",
+      "description": "dbt target name to use from profiles.yml (e.g. dev, prod)"
+    }
+  },
+  "tools": [
+    "get_model_error",
+    "run_model",
+    "get_test_results",
+    "get_model_lineage",
+    "get_manifest"
+  ],
+  "tags": ["dbt", "data-pipeline", "observability"],
+  "readme": "README.md"
+}

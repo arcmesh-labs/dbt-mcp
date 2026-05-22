@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: orders
+    description: "Final orders table built from stg_orders."
+    columns:
+      - name: order_id
+        description: "Unique order identifier."
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        description: "Customer who placed the order."
+      - name: amount
+        description: "Order total in USD."
+      - name: status
+        description: "Order fulfillment status."
